@@ -15,7 +15,7 @@
   <div id="new" class="Leaderboard" style="padding: 0">
     <h2>New Result</h2>
 
-    <form action="/processresult" method="post">
+    <form action="/processresult" method="post">{% csrf_token %}
     <p>Winner</p>
       <select name="playerA">
         <option>Ben</option>

@@ -1,10 +1,1 @@
-{
-  "leaders": [
-    {"score": 34.6805641168771, "id": 1, "name": "Kieran"},
-    {"score": 29.621913180598032, "id": 2, "name": "Henry"},
-    {"score": 24.350026563478313, "id": 3, "name": "Ryan"},
-    {"score": 20.953863377489522, "id": 4, "name": "Ben"},
-    {"score": 20.74030109805952, "id": 5, "name": "Guyon"},
-    {"score": 15.605314165011588, "id": 6, "name": "Kahloon"}],
-    "maxScore":50
-  }
+{"leaders": [{"id": 1, "name": "Kieran", "score": 31.769832624686746}, {"id": 2, "name": "Henry", "score": 27.564431456196797}, {"id": 3, "name": "Ryan", "score": 25.75064491087907}, {"id": 4, "name": "Ben", "score": 25.03947928211066}, {"id": 5, "name": "Guyon", "score": 19.590594689211688}, {"id": 6, "name": "Kahloon", "score": 19.30549405157469}], "maxScore": 50}
