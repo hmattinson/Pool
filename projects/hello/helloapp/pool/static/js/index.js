@@ -60,21 +60,24 @@ class Leaderboard extends React.Component {
   }
 
   getData() {
-    // TODO: Get JSON file
-    /* Here you can implement data fetching */
-    let data = {
-      leaders: [
-      { id: 1, name: 'Henry', score: 350 },
-      { id: 3, name: 'Ryan', score: 275 },
-      { id: 2, name: 'Ben', score: 220 },
-      { id: 4, name: 'Guyon', score: 200 },
-      { id: 5, name: 'Kahloon', score: 175 },
-      { id: 6, name: 'Kieran', score: 175 }],
-      maxScore: 500 };
+    var d = {
+      "leaders": [
+      { "id": 1, "name": "Henry", "score": 50 },
+      { "id": 3, "name": "Ryan", "score": 275 },
+      { "id": 2, "name": "Ben", "score": 220 },
+      { "id": 4, "name": "Guyon", "score": 200 },
+      { "id": 5, "name": "Kahloon", "score": 175 },
+      { "id": 6, "name": "Kieran", "score": 175 }],
+      "maxScore": 500 };
 
-    this.setState({
-      leaders: data.leaders,
-      maxScore: data.maxScore });
+    let o = this;
+
+    $.getJSON('scorejson', function(data) {
+      console.log(data)
+      o.setState({
+          leaders: data.leaders,
+          maxScore: data.maxScore});
+    });
 
   }
 
@@ -121,7 +124,7 @@ class Leaderboard extends React.Component {
       React.createElement("div", { className: "leader-name" }, i + 1 + '. ' + el.name),
       React.createElement("div", { className: "leader-score" },
 
-      React.createElement("div", { className: "leader-score_title" }, el.score)))),
+      React.createElement("div", { className: "leader-score_title" }, el.score.toFixed(3))))),
 
 
 

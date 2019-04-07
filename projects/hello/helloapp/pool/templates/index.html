@@ -14,28 +14,30 @@
 
   <div id="new" class="Leaderboard" style="padding: 0">
     <h2>New Result</h2>
+
+    <form action="/processresult" method="post">
     <p>Winner</p>
-    <select>
-      <option>Ben</option>
-      <option>Guyon</option>
-      <option>Henry</option>
-      <option>Kahloon</option>
-      <option>Kieran</option>
-      <option>Ryan</option>
-    </select>
-    <p>Loser</p>
-    <select>
-      <option>Ben</option>
-      <option>Guyon</option>
-      <option>Henry</option>
-      <option>Kahloon</option>
-      <option>Kieran</option>
-      <option>Ryan</option>
-    </select>
-    <div style="padding: 10px 0">
-      <button>Submit</button>
-      <!-- TODO: Process result -->
-    </div>
+      <select name="playerA">
+        <option>Ben</option>
+        <option>Guyon</option>
+        <option>Henry</option>
+        <option>Kahloon</option>
+        <option>Kieran</option>
+        <option>Ryan</option>
+      </select>
+      <p>Loser</p>
+      <select name="playerB">
+        <option>Ben</option>
+        <option>Guyon</option>
+        <option>Henry</option>
+        <option>Kahloon</option>
+        <option>Kieran</option>
+        <option>Ryan</option>
+      </select>
+      <div style="padding: 10px 0">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
   </div>
 
   <!-- <ol>

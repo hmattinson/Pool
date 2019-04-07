@@ -24,7 +24,7 @@ class ProcessResultView(TemplateView):
         f.close()
 
         env = TrueSkill(draw_probability=0)
-        players = ['henry','ryan','ben','kieran','guyon','kahloon']
+        players = ['Henry','Ryan','Ben','Kieran','Guyon','Kahloon']
         ratings = {player:Rating() for player in players}
         matches = [r.split(',') for r in open("results.txt", "r").read().split('\n')]
         for [winner,loser] in matches:
@@ -40,5 +40,5 @@ class ProcessResultView(TemplateView):
 
 class JsonServerView(TemplateView):
     def get(self, request, **kwargs):
-        json_data = json.load(data.json)
-        return JsonResponse(json_data)
+        with open('data.json','r') as json_data:
+            return JsonResponse(json.load(json_data))

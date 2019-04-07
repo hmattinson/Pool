@@ -1,1 +1,11 @@
 {"leaders": [{"score": 34.6805641168771, "id": 1, "name": "kieran"}, {"score": 29.621913180598032, "id": 2, "name": "henry"}, {"score": 24.350026563478313, "id": 3, "name": "ryan"}, {"score": 20.953863377489522, "id": 4, "name": "ben"}, {"score": 20.74030109805952, "id": 5, "name": "guyon"}, {"score": 15.605314165011588, "id": 6, "name": "kahloon"}]}
+
+{
+  "leaders": [
+  { "id": 1, "name": "Henry", "score": 50 },
+  { "id": 3, "name": "Ryan", "score": 275 },
+  { "id": 2, "name": "Ben", "score": 220 },
+  { "id": 4, "name": "Guyon", "score": 200 },
+  { "id": 5, "name": "Kahloon", "score": 175 },
+  { "id": 6, "name": "Kieran", "score": 175 }],
+  "maxScore": 500 }
