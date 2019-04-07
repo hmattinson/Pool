@@ -1,0 +1,10 @@
+{
+  success: true,
+  leaders: [
+  { id: 1, name: 'Henry', score: 350 },
+  { id: 3, name: 'Ryan', score: 275 },
+  { id: 2, name: 'Ben', score: 220 },
+  { id: 4, name: 'Guyon', score: 200 },
+  { id: 5, name: 'Kahloon', score: 175 },
+  { id: 6, name: 'Kieran', score: 175 }],
+  maxScore: 500 }
